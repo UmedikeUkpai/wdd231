@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal home page showcasing my web development projects." />
+  <meta name="author" content="Ukpai Godwin Umedike" />
+  <title>Home - Ukpai Godwin Umedike</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+
+<!--  HEADER  -->
+<header>
+  <nav class="navbar">
+    <div class="nav-top">
+
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/yuukaylogo.svg" alt="Yuukay Logo" />
+        </a>
+        <span>Ukpai Godwin Umedike</span>
+      </div>
+
+      <!-- Hamburger (small screens) -->
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Nav links -->
+      <nav id="mainNav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="chamber/index.html">Chamber Project</a></li>
+          <li><a href="final/index.html">Final Project</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </nav>
+</header>
+
+<!-- MAIN  -->
+<main>
+  <div class="container">
+
+    <h1>Home<span class="highlight">.</span></h1>
+
+    <div class="sections-grid">
+
+      <!-- About Me card -->
+      <section class="card card--about">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Ukpai Godwin Umedike, but I go by the brand name <strong>"YuuKay"</strong>.
+          I'm a creative mind driven by curiosity and passion for web development.
+          I blend my creative skills with technical expertise to craft designs that speak with
+          clarity and emotion — whether it's a logo, brand identity, or digital experience.
+          My work is guided by a belief that every project should feel personal, purposeful,
+          and unforgettable.
+        </p>
+        <p>
+          I am also a student of BYU Pathway, currently studying software development.
+          This course marks the final step toward earning my very first certificate as a
+          Front-End Developer, a milestone that reflects my dedication to growth and my
+          excitement for building user-friendly, visually engaging digital experiences.
+        </p>
+        <p>
+          Welcome to my portfolio. Here, you'll find a collection of projects that showcase
+          my skills in responsive design, semantic HTML, and user accessibility. This site
+          documents my journey through the course projects.
+        </p>
+      </section>
+
+      <!-- Student Photo card -->
+      <section class="card card--photo">
+        <h2>Student Photo</h2>
+        <img src="images/studentimage.jpeg" alt="Student Photo of Ukpai Godwin Umedike" />
+      </section>
+
+      <!-- Projects card -->
+      <section class="card card--projects">
+        <span class="card-num" aria-hidden="true"></span>
+        <h2>Projects</h2>
+        <p>
+          Explore the work I've built — from a responsive Chamber of Commerce site to
+          the final capstone project. Each project reflects real-world skills in HTML,
+          CSS, and JavaScript.
+        </p>
+      </section>
+
+      <!-- Contact card -->
+      <section class="card card--contact">
+        <span class="card-num" aria-hidden="true"></span>
+        <h2>Contact</h2>
+        <p>
+          Interested in collaborating or have questions about my work? Reach out via
+          the social links below, or find me on GitHub where all my repositories live.
+        </p>
+      </section>
+
+    </div>
+
+    <!-- Course section injected by course.js -->
+
+  </div>
+</main>
+
+<!-- ══ FOOTER ══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+
+    <div class="social-links" aria-label="Social media links">
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/godwin-umedike-b23b623a4" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="images/linkedinicon.svg" alt="LinkedIn" />
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/yuu.kay.611612" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="images/facebookicon.svg" alt="Facebook" />
+      </a>
+
+       <!-- Instagram -->
+      <a href="https://www.instagram.com/umedikeenyinnaya" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="images/instagramicon.svg" alt="Instagram" />
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/UmedikeUkpai" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="images/githubicon.svg" alt="GitHub" />
+      </a>
+
+      <!-- Twitter / X -->
+      <a href="https://twitter.com/Yuukay26" target="_blank" rel="noopener" aria-label="Twitter / X">
+        <img src="images/xicon.svg" alt="Twitter / X" />
+      </a>
+
+    </div>
+
+    <div class="footer-info">
+      <p>
+        &copy; <span id="copyrightYear"></span> &nbsp;❣️&nbsp;
+        <strong>Ukpai Godwin Umedike</strong> &nbsp;❣️&nbsp; Nigeria
+      </p>
+    </div>
+
+    <p id="lastModified"></p>
+
+  </div>
+</footer>
+
+</body>
+</html>
