@@ -74,11 +74,11 @@ header {
   flex-shrink: 0;
 }
 .logo img {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
   /* fallback box when SVG missing */
-  border: 2px solid var(--clr-accent2);
+  border: 1px solid var(--clr-accent2);
   border-radius: 4px;
   padding: 3px;
   background: #2a2a2a;
@@ -225,6 +225,7 @@ h1 {
 /* Card body text */
 .card p {
   padding: 1rem;
+  text-align: justify;
   font-size: 0.93rem;
   color: var(--clr-muted);
 }
