@@ -1,0 +1,144 @@
+{
+  "ward_members": [
+    {
+      "family_name": "Umedike",
+      "date_moved_in": "2023-03-15",
+      "number_of_members": 4,
+      "visited_by_bishopric": true,
+      "members": [
+        {
+          "name": "Godwin Umedike",
+          "gender": "Male",
+          "birthdate": "1988-07-22"
+        },
+        {
+          "name": "Adaeze Umedike",
+          "gender": "Female",
+          "birthdate": "1990-11-05"
+        },
+        {
+          "name": "Chukwuemeka Umedike",
+          "gender": "Male",
+          "birthdate": "2015-02-18"
+        },
+        {
+          "name": "Chidinma Umedike",
+          "gender": "Female",
+          "birthdate": "2018-09-30"
+        }
+      ]
+    },
+    {
+      "family_name": "Okafor",
+      "date_moved_in": "2023-08-01",
+      "number_of_members": 3,
+      "visited_by_bishopric": false,
+      "members": [
+        {
+          "name": "Emeka Okafor",
+          "gender": "Male",
+          "birthdate": "1985-04-12"
+        },
+        {
+          "name": "Ngozi Okafor",
+          "gender": "Female",
+          "birthdate": "1987-01-28"
+        },
+        {
+          "name": "Tobenna Okafor",
+          "gender": "Male",
+          "birthdate": "2012-06-14"
+        }
+      ]
+    },
+    {
+      "family_name": "Eze",
+      "date_moved_in": "2024-01-20",
+      "number_of_members": 5,
+      "visited_by_bishopric": true,
+      "members": [
+        {
+          "name": "Ikenna Eze",
+          "gender": "Male",
+          "birthdate": "1980-10-03"
+        },
+        {
+          "name": "Amaka Eze",
+          "gender": "Female",
+          "birthdate": "1983-05-17"
+        },
+        {
+          "name": "Chisomaga Eze",
+          "gender": "Female",
+          "birthdate": "2008-03-25"
+        },
+        {
+          "name": "Obiora Eze",
+          "gender": "Male",
+          "birthdate": "2011-08-09"
+        },
+        {
+          "name": "Adanna Eze",
+          "gender": "Female",
+          "birthdate": "2016-12-01"
+        }
+      ]
+    },
+    {
+      "family_name": "Nwachukwu",
+      "date_moved_in": "2024-06-10",
+      "number_of_members": 2,
+      "visited_by_bishopric": false,
+      "members": [
+        {
+          "name": "Chidi Nwachukwu",
+          "gender": "Male",
+          "birthdate": "1995-09-19"
+        },
+        {
+          "name": "Ify Nwachukwu",
+          "gender": "Female",
+          "birthdate": "1997-03-07"
+        }
+      ]
+    },
+    {
+      "family_name": "Onwudiwe",
+      "date_moved_in": "2025-02-28",
+      "number_of_members": 6,
+      "visited_by_bishopric": true,
+      "members": [
+        {
+          "name": "Bartholomew Onwudiwe",
+          "gender": "Male",
+          "birthdate": "1978-06-30"
+        },
+        {
+          "name": "Chioma Onwudiwe",
+          "gender": "Female",
+          "birthdate": "1981-02-14"
+        },
+        {
+          "name": "Nnamdi Onwudiwe",
+          "gender": "Male",
+          "birthdate": "2005-11-22"
+        },
+        {
+          "name": "Uchenna Onwudiwe",
+          "gender": "Male",
+          "birthdate": "2008-07-04"
+        },
+        {
+          "name": "Adaora Onwudiwe",
+          "gender": "Female",
+          "birthdate": "2013-04-16"
+        },
+        {
+          "name": "Somtochukwu Onwudiwe",
+          "gender": "Male",
+          "birthdate": "2019-10-08"
+        }
+      ]
+    }
+  ]
+}
