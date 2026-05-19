@@ -29,6 +29,29 @@
       ]
     },
     {
+      "family_name": "Nwali",
+      "date_moved_in": "2023-03-15",
+      "number_of_members": 3,
+      "visited_by_bishopric": false,
+      "members": [
+        {
+          "name": "Gladys Nwali",
+          "gender": "Female",
+          "birthdate": "1998-07-22"
+        },
+        {
+          "name": "Ugochi Nwali",
+          "gender": "Female",
+          "birthdate": "2006-11-05"
+        },
+        {
+          "name": "Obumneme Nwali",
+          "gender": "Male",
+          "birthdate": "2015-02-18"
+        }  
+      ]
+    },
+    {
       "family_name": "Okafor",
       "date_moved_in": "2023-08-01",
       "number_of_members": 3,
