@@ -1,0 +1,141 @@
+/* ===========================
+   Chamber of Commerce - larger.css
+   Responsive styles: tablet & desktop
+   =========================== */
+
+/* ---- Tablet: 640px+ ---- */
+@media (min-width: 640px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  #menu-btn { display: none; }
+
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+    background: transparent;
+    gap: 0.25rem;
+    border-radius: 0;
+  }
+
+  nav ul li a {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: rgba(200,146,42,0.18);
+    border-bottom-color: var(--clr-secondary);
+    border-left-color: transparent;
+  }
+
+  .hero {
+    padding: 4rem 2rem;
+  }
+
+  .hero h2 {
+    font-size: 2.6rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .directory-controls {
+    padding: 1.5rem 2rem 1rem;
+  }
+
+  #members-container {
+    padding: 0.5rem 2rem 2.5rem;
+  }
+
+  #members-container.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-section { flex: 1; min-width: 180px; }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* ---- Desktop: 1024px+ ---- */
+@media (min-width: 1024px) {
+  header {
+    padding: 1rem 3rem;
+  }
+
+  .header-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    padding: 5rem 3rem;
+  }
+
+  .hero h2 {
+    font-size: 3.2rem;
+  }
+
+  .directory-controls {
+    padding: 2rem 3rem 1rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  #members-container {
+    padding: 0.5rem 3rem 3rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  #members-container.grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .member-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .member-logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  footer {
+    padding: 3rem;
+  }
+
+  .footer-grid {
+    max-width: var(--max-width);
+    margin: 0 auto 2rem;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+}
+
+/* ---- Wide: 1280px+ ---- */
+@media (min-width: 1280px) {
+  #members-container.grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
