@@ -19,7 +19,7 @@ function renderMembers(members) {
     img.loading   = 'lazy';
     img.onerror   = function() {
       this.onerror = null;               // detach handler so it never fires twice
-      this.src     = 'images/placeholder.png';
+      this.src     = 'images/placeholder.svg';
     };
     img.src = 'images/' + m.image;       // assign src AFTER onerror is attached
 

@@ -1,72 +1,72 @@
 [
   {
     "name": "Pinnacle Tech Solutions",
-    "address": "142 Innovation Drive, Lawanche, BF 21866",
+    "address": "142 Innovation Drive, Riverside, CA 92501",
     "phone": "(951) 555-0182",
-    "website": "https://www.pinnacletech.com",
+    "website": "https://www.pinnacletech.example.com",
     "image": "pinnacle-tech.svg",
     "membership": 3,
     "description": "Full-spectrum IT consulting and cloud infrastructure for growing enterprises."
   },
   {
     "name": "Green Valley Organics",
-    "address": "88 Farm Road, Lawanche, BF 21876",
+    "address": "88 Farm Road, Riverside, CA 92503",
     "phone": "(951) 555-0234",
-    "website": "https://www.greenvalleyorganics.com",
+    "website": "https://www.greenvalleyorganics.example.com",
     "image": "green-valley.svg",
     "membership": 2,
     "description": "Locally sourced organic produce delivered fresh to your door since 1998."
   },
   {
     "name": "Riverside Legal Group",
-    "address": "500 Court Street Suite 300, Lawanche, BF 21886",
+    "address": "500 Court Street Suite 300, Riverside, CA 92502",
     "phone": "(951) 555-0311",
-    "website": "https://www.riversidelegal.com",
+    "website": "https://www.riversidelegal.example.com",
     "image": "riverside-legal.svg",
     "membership": 3,
     "description": "Comprehensive legal services for businesses and individuals across Southern California."
   },
   {
-    "name": "Sunrise Financial Solutions",
-    "address": "220 Commerce Blvd, Lawanche, BF 21896",
+    "name": "Sunrise Financial Advisors",
+    "address": "220 Commerce Blvd, Riverside, CA 92507",
     "phone": "(951) 555-0478",
-    "website": "https://www.sunrisefinancial.com",
+    "website": "https://www.sunrisefinancial.example.com",
     "image": "sunrise-financial.svg",
     "membership": 2,
     "description": "Personalized wealth management and retirement planning for every stage of life."
   },
   {
     "name": "Metro Build & Design",
-    "address": "1050 Industrial Way, Lawanche, BF 21906",
+    "address": "1050 Industrial Way, Riverside, CA 92509",
     "phone": "(951) 555-0556",
-    "website": "https://www.metrobuild.com",
+    "website": "https://www.metrobuild.example.com",
     "image": "metro-build.svg",
     "membership": 1,
     "description": "Residential and commercial construction with over 25 years of trusted craftsmanship."
   },
   {
     "name": "Coastal Creative Agency",
-    "address": "33 Artisan Lane, Lawanche, BF 21916",
+    "address": "33 Artisan Lane, Riverside, CA 92504",
     "phone": "(951) 555-0629",
-    "website": "https://www.coastalcreative.com",
+    "website": "https://www.coastalcreative.example.com",
     "image": "coastal-creative.svg",
     "membership": 2,
     "description": "Branding, digital marketing, and web design that makes your business unforgettable."
   },
   {
     "name": "Summit Health & Wellness",
-    "address": "780 Wellness Way, Lawanche, BF 21926",
+    "address": "780 Wellness Way, Riverside, CA 92506",
     "phone": "(951) 555-0741",
-    "website": "https://www.summithealth.com",
+    "website": "https://www.summithealth.example.com",
     "image": "summit-health.svg",
     "membership": 3,
     "description": "Integrative healthcare clinics offering primary care, nutrition, and wellness programs."
   },
   {
     "name": "Ironclad Security Systems",
-    "address": "415 Shield Parkway, Lawanche, BF 21936",
+    "address": "415 Shield Parkway, Riverside, CA 92508",
     "phone": "(951) 555-0893",
-    "website": "https://www.ironcladsecurity.com",
+    "website": "https://www.ironcladsecurity.example.com",
     "image": "ironclad-security.svg",
     "membership": 1,
     "description": "Commercial and residential security installations with 24/7 monitoring services."

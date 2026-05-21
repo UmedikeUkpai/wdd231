@@ -4,23 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Member Directory | YuuKay Chamber of Commerce</title>
-  <meta name="description" content="Explore our thriving business community. Browse the YuuKay Chamber of Commerce member directory featuring local businesses across all industries.">
-  <meta name="author" content="Your Full Name, WDD 231">
+  <meta name="description" content="Explore our thriving business community. Browse the Yuukay Chamber of Commerce member directory featuring local businesses across all industries.">
+  <meta name="author" content="Ukpai Godwin Umedike, WDD 231">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <meta property="og:title" content="YuuKay Chamber of Commerce – Member Directory">
-  <meta property="og:description" content="Browse local businesses across all industries in the YuuKay area.">
-  <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/og-image.jpg">
-  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html">
+  <meta property="og:description" content="Browse local businesses across all industries in the Yuukay area.">
+  <meta property="og:image" content="https://UmedikeUkpai.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://UmedikeUkpai.github.io/wdd231/chamber/directory.html">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
+  <script src="script/directory.js" defer></script>
 </head>
 <body>
 
   <header>
     <div class="header-logo">
-      <img src="images/chamber-logo.png" alt="YuuKay Chamber of Commerce Logo" width="52" height="52" onerror="this.style.display='none'">
+      <img src="images/favicon.png" alt="YuuKay Chamber of Commerce Logo" width="52" height="52" onerror="this.style.display='none'">
       <div class="header-text">
         <h1>YuuKay Chamber</h1>
         <p>of Commerce</p>
@@ -29,17 +30,17 @@
     <button id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
     <nav aria-label="Primary navigation">
       <ul id="nav-menu" role="menubar">
-        <li role="none"><a href="directory.html" role="menuitem">Directory</a></li>
         <li role="none"><a href="index.html" role="menuitem">Home</a></li>
-        <li role="none"><a href="join.html" role="menuitem">Join</a></li>
+        <li role="none"><a href="directory.html" role="menuitem">Directory</a></li>
         <li role="none"><a href="discover.html" role="menuitem">Discover</a></li>
+        <li role="none"><a href="join.html" role="menuitem">Join</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero" aria-label="Directory introduction">
     <h2>Our Member Directory</h2>
-    <p>Connect with the businesses that make Riverside thrive. From startups to established enterprises, our members represent the best of the Inland Empire.</p>
+    <p>Connect with the businesses that make YuuKay thrive. From startups to established enterprises, our members represent the best of the Inland Empire.</p>
     <a href="join.html" class="hero-cta">Become a Member</a>
   </section>
 
@@ -51,23 +52,25 @@
         <button id="list-btn" class="toggle-btn" aria-label="List view" title="List view">☰</button>
       </div>
     </div>
-    <section id="members-container" class="grid" aria-label="Chamber members" aria-live="polite"></section>
+    <section id="members-container" class="grid" aria-label="Chamber members" aria-live="polite">
+      <p class="loading-msg">Loading members…</p>
+    </section>
   </main>
 
   <footer>
     <div class="footer-grid">
       <div class="footer-section">
         <h4>YuuKay Chamber</h4>
-        <p>3985 University Ave<br>YuuKay, CA 92501</p>
-        <p>📞 (951) 683-7100</p>
-        <p>✉ info@yuu kay-chamber.example.com</p>
+        <p>126 Thomas Sankara Street<br>Lawanche, BF 21926</p>
+        <p>📞 (+234) 81-6472-7771</p>
+        <p>✉ info@yuukay-chamber.com</p>
       </div>
       <div class="footer-section">
         <h4>Quick Links</h4>
-        <a href="directory.html">Member Directory</a>
-        <a href="join.html">Join the Chamber</a>
-        <a href="discover.html">Discover YuuKay</a>
         <a href="index.html">Home</a>
+        <a href="discover.html">Discover Riverside</a>
+        <a href="directory.html">Member Directory</a>
+        <a href="join.html">Join the Chamber</a> 
       </div>
       <div class="footer-section">
         <h4>Membership Levels</h4>
@@ -77,106 +80,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span id="copyright-year"></span> Riverside Chamber of Commerce · Your Full Name · WDD 231</p>
+      <p>&copy; <span id="copyright-year"></span> ❣️ YuuKay Chamber of Commerce ❣️ WDD 231</p>
       <p>Last modified: <span id="last-modified"></span></p>
     </div>
   </footer>
-
-  <script>
-    // ── Data ──────────────────────────────────────────────────────────────────
-    const MEMBERS = [
-      { name: "Pinnacle Tech Solutions",    address: "142 Innovation Drive, Riverside, CA 92501",       phone: "(951) 555-0182", website: "https://www.pinnacletech.example.com",       image: "pinnacle-tech.png",     membership: 3, description: "Full-spectrum IT consulting and cloud infrastructure for growing enterprises." },
-      { name: "Green Valley Organics",      address: "88 Farm Road, Riverside, CA 92503",               phone: "(951) 555-0234", website: "https://www.greenvalleyorganics.example.com", image: "green-valley.png",      membership: 2, description: "Locally sourced organic produce delivered fresh to your door since 1998." },
-      { name: "Riverside Legal Group",      address: "500 Court Street Suite 300, Riverside, CA 92502", phone: "(951) 555-0311", website: "https://www.riversidelegal.example.com",      image: "riverside-legal.png",   membership: 3, description: "Comprehensive legal services for businesses and individuals across Southern California." },
-      { name: "Sunrise Financial Advisors", address: "220 Commerce Blvd, Riverside, CA 92507",          phone: "(951) 555-0478", website: "https://www.sunrisefinancial.example.com",    image: "sunrise-financial.png", membership: 2, description: "Personalized wealth management and retirement planning for every stage of life." },
-      { name: "Metro Build & Design",       address: "1050 Industrial Way, Riverside, CA 92509",        phone: "(951) 555-0556", website: "https://www.metrobuild.example.com",           image: "metro-build.png",       membership: 1, description: "Residential and commercial construction with over 25 years of trusted craftsmanship." },
-      { name: "Coastal Creative Agency",    address: "33 Artisan Lane, Riverside, CA 92504",            phone: "(951) 555-0629", website: "https://www.coastalcreative.example.com",      image: "coastal-creative.png",  membership: 2, description: "Branding, digital marketing, and web design that makes your business unforgettable." },
-      { name: "Summit Health & Wellness",   address: "780 Wellness Way, Riverside, CA 92506",           phone: "(951) 555-0741", website: "https://www.summithealth.example.com",         image: "summit-health.png",     membership: 3, description: "Integrative healthcare clinics offering primary care, nutrition, and wellness programs." },
-      { name: "Ironclad Security Systems",  address: "415 Shield Parkway, Riverside, CA 92508",         phone: "(951) 555-0893", website: "https://www.ironcladsecurity.example.com",     image: "ironclad-security.png", membership: 1, description: "Commercial and residential security installations with 24/7 monitoring services." }
-    ];
-
-    // ── Helpers ───────────────────────────────────────────────────────────────
-    function getMembershipInfo(level) {
-      if (level === 3) return { label: 'Gold',   cls: 'gold'   };
-      if (level === 2) return { label: 'Silver', cls: 'silver' };
-      return                  { label: 'Member', cls: 'member' };
-    }
-
-    function renderMembers(members) {
-      const container = document.getElementById('members-container');
-      container.innerHTML = '';
-      members.forEach(function(m) {
-        var info = getMembershipInfo(m.membership);
-        var card = document.createElement('article');
-        card.className = 'member-card ' + info.cls;
-        card.innerHTML =
-          '<img class="member-logo" src="images/' + m.image + '" alt="' + m.name + ' logo" loading="lazy" onerror="this.src=\'images/placeholder.png\'">' +
-          '<div class="member-info">' +
-            '<h3>' + m.name + '</h3>' +
-            '<p class="member-description">' + m.description + '</p>' +
-            '<p>' + m.address + '</p>' +
-            '<p>' + m.phone + '</p>' +
-            '<a class="member-website" href="' + m.website + '" target="_blank" rel="noopener noreferrer">' + m.website.replace('https://www.', '') + '</a>' +
-            '<span class="membership-badge ' + info.cls + '">' + info.label + '</span>' +
-          '</div>';
-        container.appendChild(card);
-      });
-    }
-
-    function applyView(view) {
-      var container = document.getElementById('members-container');
-      var gridBtn   = document.getElementById('grid-btn');
-      var listBtn   = document.getElementById('list-btn');
-      container.className = view;
-      gridBtn.classList.toggle('active', view === 'grid');
-      listBtn.classList.toggle('active', view === 'list');
-    }
-
-    // ── Fetch with inline fallback ────────────────────────────────────────────
-    async function loadMembers() {
-      try {
-        var response = await fetch('data/members.json');
-        if (!response.ok) throw new Error('HTTP ' + response.status);
-        var data = await response.json();
-        renderMembers(data);
-      } catch (e) {
-        console.warn('Using inline data:', e.message);
-        renderMembers(MEMBERS);
-      }
-    }
-
-    // ── Boot ──────────────────────────────────────────────────────────────────
-    // Footer
-    document.getElementById('copyright-year').textContent = new Date().getFullYear();
-    document.getElementById('last-modified').textContent  = document.lastModified;
-
-    // Active nav
-    var page = window.location.pathname.split('/').pop() || 'directory.html';
-    document.querySelectorAll('nav a').forEach(function(a) {
-      if (a.getAttribute('href') === page) { a.classList.add('active'); }
-    });
-
-    // Hamburger
-    document.getElementById('menu-btn').addEventListener('click', function() {
-      var nav = document.getElementById('nav-menu');
-      nav.classList.toggle('open');
-      this.textContent = nav.classList.contains('open') ? '✕' : '☰';
-    });
-
-    // View toggle
-    var currentView = localStorage.getItem('chamberView') || 'grid';
-    applyView(currentView);
-
-    document.getElementById('grid-btn').addEventListener('click', function() {
-      currentView = 'grid'; applyView(currentView); localStorage.setItem('chamberView', currentView);
-    });
-    document.getElementById('list-btn').addEventListener('click', function() {
-      currentView = 'list'; applyView(currentView); localStorage.setItem('chamberView', currentView);
-    });
-
-    // Load members — runs immediately, DOM is already parsed
-    loadMembers();
-  </script>
-
 </body>
 </html>
