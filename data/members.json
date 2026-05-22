@@ -128,7 +128,7 @@
     {
       "family_name": "Onwudiwe",
       "date_moved_in": "2025-02-28",
-      "number_of_members": 6,
+      "number_of_members": 5,
       "visited_by_bishopric": true,
       "members": [
         {
@@ -155,11 +155,6 @@
           "name": "Adaora Onwudiwe",
           "gender": "Female",
           "birthdate": "2013-04-16"
-        },
-        {
-          "name": "Somtochukwu Onwudiwe",
-          "gender": "Male",
-          "birthdate": "2019-10-08"
         }
       ]
     }
