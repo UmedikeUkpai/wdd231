@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YuuKay Chamber of Commerce</title>
+  <meta name="description" content="Explore our thriving business community. Browse the Yuukay Chamber of Commerce member directory featuring local businesses across all industries.">
+  <meta name="author" content="Ukpai Godwin Umedike, WDD 231">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <meta property="og:title" content="YuuKay Chamber of Commerce – Home">
+  <meta property="og:description" content="Explore our thriving business community. Browse the Yuukay Chamber of Commerce member directory featuring local businesses across all industries.">
+  <meta property="og:image" content="https://UmedikeUkpai.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://UmedikeUkpai.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="script/directory.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="header-logo">
+    <a href="index.html">
+      <img src="images/favicon.png" alt="YuuKay Chamber of Commerce Logo" width="52" height="52" onerror="this.style.display='none'">
+      <div class="header-text">
+        <h1>YuuKay Chamber</h1>
+        <p>Of Commerce</p>
+      </div>
+    </a>
+  </div>
+  <button id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+  <nav aria-label="Primary navigation">
+    <ul id="nav-menu" role="menubar">
+      <li role="none"><a href="index.html" role="menuitem" class="active">Home</a></li>
+      <li role="none"><a href="directory.html" role="menuitem">Directory</a></li>
+      <li role="none"><a href="discover.html" role="menuitem">Discover</a></li>
+      <li role="none"><a href="join.html" role="menuitem">Join Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<div class="container">
+
+<!-- FORM -->
+
+<form method="get" action="thankyou.html">
+
+<h2>Join the Chamber</h2>
+
+<label>
+    First Name
+    <input
+        type="text"
+        name="fname"
+        title="Enter your first name"
+        autocomplete="given-name"
+        required>
+</label>
+
+<label>
+    Last Name
+    <input
+        type="text"
+        name="lname"
+        title="Enter your last name"
+        autocomplete="family-name"
+        required>
+</label>
+
+<label>
+    Organizational Title
+    <input
+        type="text"
+        name="orgtitle"
+        title="Minimum 7 characters. Letters, spaces and hyphens only."
+        autocomplete="organization-title"
+        pattern="[A-Za-z\s-]{7,}"
+        required>
+</label>
+
+<label>
+    Email Address
+    <input
+        type="email"
+        name="email"
+        placeholder="example@company.com"
+        title="Enter a valid email address"
+        autocomplete="email"
+        required>
+</label>
+
+<label>
+    Mobile Phone Number
+    <input
+        type="tel"
+        name="phone"
+        autocomplete="tel"
+        title="Enter your mobile number"
+        required>
+</label>
+
+<label>
+    Business/Organization Name
+    <input
+        type="text"
+        name="business"
+        autocomplete="organization"
+        title="Business Name"
+        required>
+</label>
+
+<div class="membership-options">
+    <h3>Membership Level</h3>
+
+    <label>
+        <input type="radio" name="membership" value="np" required>
+        NP Membership
+    </label>
+
+    <label>
+        <input type="radio" name="membership" value="bronze">
+        Bronze Membership
+    </label>
+
+    <label>
+        <input type="radio" name="membership" value="silver">
+        Silver Membership
+    </label>
+
+    <label>
+        <input type="radio" name="membership" value="gold">
+        Gold Membership
+    </label>
+</div>
+
+<label>
+    Business Description
+    <textarea
+        name="description"
+        rows="5"
+        title="Describe your organization"></textarea>
+</label>
+
+<input
+    type="hidden"
+    id="timestamp"
+    name="timestamp">
+
+<button type="submit">
+    Apply for Membership
+</button>
+
+</form>
+
+<!-- MEMBERSHIP CARDS -->
+
+<section class="cards">
+
+<div class="card">
+    <h3>NP Membership</h3>
+    <p>Non-profit organizations.</p>
+    <a href="#" onclick="npModal.showModal()">Learn More</a>
+</div>
+
+<div class="card">
+    <h3>Bronze Membership</h3>
+    <p>Basic chamber benefits.</p>
+    <a href="#" onclick="bronzeModal.showModal()">Learn More</a>
+</div>
+
+<div class="card">
+    <h3>Silver Membership</h3>
+    <p>Enhanced exposure and networking.</p>
+    <a href="#" onclick="silverModal.showModal()">Learn More</a>
+</div>
+
+<div class="card">
+    <h3>Gold Membership</h3>
+    <p>Premium benefits and visibility.</p>
+    <a href="#" onclick="goldModal.showModal()">Learn More</a>
+</div>
+
+</section>
+
+</div>
+
+</main>
+
+<!-- MODALS -->
+
+<dialog id="npModal">
+    <h2>NP Membership</h2>
+    <p>Designed for non-profit organizations.</p>
+    <ul>
+        <li>No membership fee</li>
+        <li>Community networking</li>
+        <li>Directory listing</li>
+    </ul>
+    <button onclick="npModal.close()">Close</button>
+</dialog>
+
+<dialog id="bronzeModal">
+    <h2>Bronze Membership</h2>
+    <ul>
+        <li>Business listing</li>
+        <li>Networking events</li>
+        <li>Training opportunities</li>
+    </ul>
+    <button onclick="bronzeModal.close()">Close</button>
+</dialog>
+
+<dialog id="silverModal">
+    <h2>Silver Membership</h2>
+    <ul>
+        <li>All Bronze benefits</li>
+        <li>Advertising opportunities</li>
+        <li>Business spotlight</li>
+    </ul>
+    <button onclick="silverModal.close()">Close</button>
+</dialog>
+
+<dialog id="goldModal">
+    <h2>Gold Membership</h2>
+    <ul>
+        <li>All Silver benefits</li>
+        <li>Homepage feature</li>
+        <li>Event sponsorship discounts</li>
+    </ul>
+    <button onclick="goldModal.close()">Close</button>
+</dialog>
+
+<<footer>
+  <div class="footer-grid">
+    <div class="footer-section">
+      <h4>YuuKay Chamber</h4>
+      <p>126 Thomas Sankara Street<br>Lawanche, BF 21926</p>
+      <p>📞 (+234) 81-6472-7771</p>
+      <p>✉ info@yuukay-chamber.com</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover Riverside</a>
+      <a href="directory.html">Member Directory</a>
+      <a href="join.html">Join the Chamber</a>
+    </div>
+    <div class="footer-section">
+      <h4>Membership Levels</h4>
+      <p>🥇 Gold – Premium visibility</p>
+      <p>🥈 Silver – Enhanced listing</p>
+      <p>🏅 Member – Standard listing</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="copyright-year"></span> ❣️ YuuKay Chamber of Commerce ❣️ WDD 231</p>
+    <p>Last modified: <span id="last-modified"></span></p>
+  </div>
+</footer>
+</body>
+</html>
