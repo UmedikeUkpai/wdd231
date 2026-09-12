@@ -1,11 +1,8 @@
+const menuButton = document.getElementById('menuButton');
+const primaryNav = document.getElementById('primaryNav');
 
-
-    // Hamburger menu toggle
-    const menuBtn  = document.getElementById('menuBtn');
-    const mainNav  = document.getElementById('mainNav');
-
-    menuBtn.addEventListener('click', () => {
-      const isOpen = mainNav.classList.toggle('open');
-      menuBtn.classList.toggle('open', isOpen);
-      menuBtn.setAttribute('aria-expanded', isOpen);
-    });
+menuButton.addEventListener('click', () => {
+  const isOpen = primaryNav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', isOpen);
+  menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+});

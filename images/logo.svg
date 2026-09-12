@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Site logo</title>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#14213D"/>
+  <path d="M22 20 L11 32 L22 44" fill="none" stroke="#2EC4B6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 20 L53 32 L42 44" fill="none" stroke="#2EC4B6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="3.5" fill="#FFB238"/>
+</svg>

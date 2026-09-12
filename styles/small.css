@@ -1,0 +1,299 @@
+/* ============================
+   Design tokens
+   ============================ */
+:root {
+  --ink: #14213D;
+  --paper: #F7F8FA;
+  --accent: #2EC4B6;
+  --accent-dark: #1B998B;
+  --amber: #FFB238;
+  --muted: #5C6B73;
+  --card-bg: #FFFFFF;
+  --border: #E2E6EA;
+
+  --font: 'Space Grotesk', sans-serif;
+  --gutter: 1.1rem;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+h1, h2, h3 {
+  font-family: var(--font);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+p {
+  color: var(--muted);
+  max-width: 65ch;
+}
+
+/* ============================
+   Header
+   ============================ */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem var(--gutter);
+  background-color: var(--ink);
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.brand .logo {
+  border-radius: 10px;
+}
+
+.site-name {
+  color: var(--paper);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0.4rem;
+  z-index: 20;
+}
+
+.hamburger .bar {
+  width: 24px;
+  height: 3px;
+  background-color: var(--paper);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.hamburger[aria-expanded="true"] .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger[aria-expanded="true"] .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger[aria-expanded="true"] .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--ink);
+  z-index: 10;
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  display: block;
+  padding: 0.9rem var(--gutter);
+  color: var(--paper);
+  font-weight: 500;
+  border-top: 1px solid rgba(247, 248, 250, 0.12);
+  position: relative;
+}
+
+nav a[aria-current="page"] {
+  color: var(--amber);
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--accent);
+}
+
+/* ============================
+   Main layout
+   ============================ */
+main {
+  padding: 1.6rem var(--gutter) 3rem;
+}
+
+main > h1 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+section {
+  margin-bottom: 2.6rem;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+}
+
+/* About */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.about-media {
+  width: 140px;
+}
+
+.avatar {
+  border-radius: 16px;
+}
+
+/* Course controls */
+.courses-intro {
+  margin-bottom: 1rem;
+}
+
+.course-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+  font-weight: 600;
+  font-size: 0.85rem;
+  background-color: var(--card-bg);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.filter-btn[aria-pressed="true"] {
+  background-color: var(--ink);
+  color: var(--paper);
+}
+
+.filter-btn:hover,
+.filter-btn:focus-visible {
+  background-color: var(--accent-dark);
+  color: var(--paper);
+  border-color: var(--accent-dark);
+}
+
+.course-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+.course-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--muted);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.course-card.completed {
+  border-left-color: var(--accent-dark);
+  background-color: #EEFBF9;
+}
+
+.course-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.course-card .course-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.course-card .status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.course-card.completed .status {
+  color: var(--accent-dark);
+}
+
+.total-credits {
+  margin-top: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Focus section */
+.focus-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+
+.focus-item {
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  border-top: 4px solid var(--amber);
+}
+
+.focus-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ============================
+   Footer
+   ============================ */
+footer {
+  padding: 1.6rem var(--gutter) 2.2rem;
+  background-color: var(--ink);
+  color: var(--paper);
+  text-align: center;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  color: var(--paper);
+  transition: color 0.15s ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  color: var(--accent);
+}
+
+.footer-meta,
+#lastModified {
+  font-size: 0.85rem;
+  color: rgba(247, 248, 250, 0.75);
+  margin-bottom: 0.3rem;
+}
