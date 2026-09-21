@@ -1,65 +1,13 @@
-/* ═══════════════════════════════════════════════
-   large.css  –  YuuKay Chamber  –  Desktop layout
-   Overrides applied at 768px and above
-   ═══════════════════════════════════════════════ */
-
-/* ── Nav: always visible on desktop ────────────── */
-@media (min-width: 768px) {
-  #menu-btn { display: none; }
-
-  nav { width: auto; }
-  #nav-menu {
-    display: flex !important;
-    flex-direction: row;
-    gap: .2rem;
-    padding: 0;
-  }
-  #nav-menu li a { font-size: .875rem; }
-}
-
-/* ── Hero: taller on desktop ────────────────────── */
-@media (min-width: 768px) {
-  .hero {
-    min-height: 620px;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
-  .hero-content {
-    text-align: left;
-    padding: 4rem 3rem 4.5rem;
-    max-width: 620px;
-  }
-  .hero-content > p { margin-inline: 0; }
-  .cta-group { justify-content: flex-start; }
-}
-
-/* ── Home grid: two-column on desktop ───────────── */
+/* large.css – desktop layout (min-width: 900px) */
 @media (min-width: 900px) {
-  .home-grid {
-    grid-template-columns: 1fr 340px;
-    align-items: start;
-  }
+  #menu-btn { display: none; }
+  header { flex-wrap: nowrap; }
+  nav { width: auto; }
+  #nav-menu { display: flex !important; flex-direction: row; padding: 0; gap: .25rem; }
 
-  /* Spotlight cards: 2-col within the left column */
-  #spotlight-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+  .home-grid { grid-template-columns: 1fr 360px; gap: 3rem; }
+  #spotlight-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; }
 
-/* ── Footer: 3-col on desktop ───────────────────── */
-@media (min-width: 768px) {
-  .footer-grid {
-    grid-template-columns: 1.8fr 1fr 1fr;
-  }
-  .footer-bottom {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
-}
-
-/* ── Wider hero image shift on large screens ─────── */
-@media (min-width: 1200px) {
-  .hero { background-position: center 35%; }
-  .hero-content { padding-left: 5rem; }
+  .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+  .footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; text-align: left; }
 }

@@ -3,247 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YuuKay Chamber of Commerce</title>
-  <meta name="description" content="Explore our thriving business community. Browse the Yuukay Chamber of Commerce member directory featuring local businesses across all industries.">
+  <title>Join the Chamber | YuuKay Chamber of Commerce</title>
+  <meta name="description" content="Apply for membership in the YuuKay Chamber of Commerce and connect with our thriving business community.">
   <meta name="author" content="Ukpai Godwin Umedike, WDD 231">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-  <meta property="og:title" content="YuuKay Chamber of Commerce – Home">
-  <meta property="og:description" content="Explore our thriving business community. Browse the Yuukay Chamber of Commerce member directory featuring local businesses across all industries.">
-  <meta property="og:image" content="https://UmedikeUkpai.github.io/wdd231/chamber/images/og-image.jpg">
-  <meta property="og:url" content="https://UmedikeUkpai.github.io/wdd231/chamber/index.html">
-  <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/join.css">
   <link rel="stylesheet" href="styles/large.css">
-  <script src="script/directory.js" defer></script>
+  <script src="script/join.js" defer></script>
 </head>
 <body>
+
 <header>
   <div class="header-logo">
     <a href="index.html">
       <img src="images/favicon.png" alt="YuuKay Chamber of Commerce Logo" width="52" height="52" onerror="this.style.display='none'">
-      <div class="header-text">
-        <h1>YuuKay Chamber</h1>
-        <p>Of Commerce</p>
-      </div>
+      <div class="header-text"><h1>YuuKay Chamber</h1><p>Of Commerce</p></div>
     </a>
   </div>
   <button id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
   <nav aria-label="Primary navigation">
-    <ul id="nav-menu" role="menubar">
-      <li role="none"><a href="index.html" role="menuitem" class="active">Home</a></li>
-      <li role="none"><a href="directory.html" role="menuitem">Directory</a></li>
-      <li role="none"><a href="discover.html" role="menuitem">Discover</a></li>
-      <li role="none"><a href="join.html" role="menuitem">Join Us</a></li>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="join.html" class="active" aria-current="page">Join Us</a></li>
     </ul>
   </nav>
 </header>
 
-<main>
-
-<div class="container">
-
-<!-- FORM -->
-
-<form method="get" action="thankyou.html">
-
-<h2>Join the Chamber</h2>
-
-<label>
-    First Name
-    <input
-        type="text"
-        name="fname"
-        title="Enter your first name"
-        autocomplete="given-name"
-        required>
-</label>
-
-<label>
-    Last Name
-    <input
-        type="text"
-        name="lname"
-        title="Enter your last name"
-        autocomplete="family-name"
-        required>
-</label>
-
-<label>
-    Organizational Title
-    <input
-        type="text"
-        name="orgtitle"
-        title="Minimum 7 characters. Letters, spaces and hyphens only."
-        autocomplete="organization-title"
-        pattern="[A-Za-z\s-]{7,}"
-        required>
-</label>
-
-<label>
-    Email Address
-    <input
-        type="email"
-        name="email"
-        placeholder="example@company.com"
-        title="Enter a valid email address"
-        autocomplete="email"
-        required>
-</label>
-
-<label>
-    Mobile Phone Number
-    <input
-        type="tel"
-        name="phone"
-        autocomplete="tel"
-        title="Enter your mobile number"
-        required>
-</label>
-
-<label>
-    Business/Organization Name
-    <input
-        type="text"
-        name="business"
-        autocomplete="organization"
-        title="Business Name"
-        required>
-</label>
-
-<div class="membership-options">
-    <h3>Membership Level</h3>
-
-    <label>
-        <input type="radio" name="membership" value="np" required>
-        NP Membership
-    </label>
-
-    <label>
-        <input type="radio" name="membership" value="bronze">
-        Bronze Membership
-    </label>
-
-    <label>
-        <input type="radio" name="membership" value="silver">
-        Silver Membership
-    </label>
-
-    <label>
-        <input type="radio" name="membership" value="gold">
-        Gold Membership
-    </label>
-</div>
-
-<label>
-    Business Description
-    <textarea
-        name="description"
-        rows="5"
-        title="Describe your organization"></textarea>
-</label>
-
-<input
-    type="hidden"
-    id="timestamp"
-    name="timestamp">
-
-<button type="submit">
-    Apply for Membership
-</button>
-
-</form>
-
-<!-- MEMBERSHIP CARDS -->
-
-<section class="cards">
-
-<div class="card">
-    <h3>NP Membership</h3>
-    <p>Non-profit organizations.</p>
-    <a href="#" onclick="npModal.showModal()">Learn More</a>
-</div>
-
-<div class="card">
-    <h3>Bronze Membership</h3>
-    <p>Basic chamber benefits.</p>
-    <a href="#" onclick="bronzeModal.showModal()">Learn More</a>
-</div>
-
-<div class="card">
-    <h3>Silver Membership</h3>
-    <p>Enhanced exposure and networking.</p>
-    <a href="#" onclick="silverModal.showModal()">Learn More</a>
-</div>
-
-<div class="card">
-    <h3>Gold Membership</h3>
-    <p>Premium benefits and visibility.</p>
-    <a href="#" onclick="goldModal.showModal()">Learn More</a>
-</div>
-
+<section class="dir-hero">
+  <p class="hero-eyebrow">Membership</p>
+  <h2>Join the Chamber</h2>
+  <p>Get connected to networking events, business resources and a community invested in your success.</p>
 </section>
 
-</div>
+<main class="join-page">
+  <div class="join-grid">
 
+    <!-- ── FORM ── -->
+    <form class="join-form" method="get" action="thankyou.html">
+      <h2>Membership Application</h2>
+      <p class="form-intro">Fields marked <span class="req">*</span> are required.</p>
+
+      <fieldset>
+        <legend><span class="step">1</span> About You</legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name <span class="req">*</span></label>
+            <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name <span class="req">*</span></label>
+            <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="orgtitle">Organizational Title <span class="req">*</span></label>
+          <input type="text" id="orgtitle" name="orgtitle" autocomplete="organization-title"
+                 pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters. Letters, spaces and hyphens only." required>
+          <small>Letters, spaces and hyphens only (7+ characters).</small>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="example@company.com" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Mobile Phone <span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(+234) 80-0000-0000" autocomplete="tel" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="step">2</span> Your Business</legend>
+        <div class="form-group">
+          <label for="business">Business / Organization Name <span class="req">*</span></label>
+          <input type="text" id="business" name="business" autocomplete="organization" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Business Description</label>
+          <textarea id="description" name="description" rows="4" placeholder="Tell us briefly what your organization does"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="step">3</span> Membership Level <span class="req">*</span></legend>
+        <div class="plans">
+          <label class="plan">
+            <input type="radio" name="membership" value="np" required>
+            <span class="plan-body"><strong>🤝 NP</strong><em>Non-profit</em><small>No fee</small></span>
+          </label>
+          <label class="plan">
+            <input type="radio" name="membership" value="bronze">
+            <span class="plan-body"><strong>🏅 Bronze</strong><em>Basic benefits</em><small>Listing + events</small></span>
+          </label>
+          <label class="plan">
+            <input type="radio" name="membership" value="silver">
+            <span class="plan-body"><strong>🥈 Silver</strong><em>Enhanced exposure</em><small>Ads + spotlight</small></span>
+          </label>
+          <label class="plan">
+            <input type="radio" name="membership" value="gold">
+            <span class="plan-body"><strong>🥇 Gold</strong><em>Premium visibility</em><small>Homepage feature</small></span>
+          </label>
+        </div>
+      </fieldset>
+
+      <input type="hidden" id="timestamp" name="timestamp">
+      <button type="submit" class="btn-primary submit-btn">Apply for Membership</button>
+    </form>
+
+    <!-- ── MEMBERSHIP INFO ── -->
+    <aside class="plan-info">
+      <p class="section-label">Compare Levels</p>
+      <h2 class="section-title">Membership Benefits</h2>
+      <div class="section-rule"></div>
+
+      <div class="info-card level-np">
+        <h3>NP Membership</h3>
+        <p>For non-profit organizations.</p>
+        <button type="button" class="learn-btn" data-modal="npModal">Learn More</button>
+      </div>
+      <div class="info-card level-bronze">
+        <h3>Bronze Membership</h3>
+        <p>Basic chamber benefits.</p>
+        <button type="button" class="learn-btn" data-modal="bronzeModal">Learn More</button>
+      </div>
+      <div class="info-card level-silver">
+        <h3>Silver Membership</h3>
+        <p>Enhanced exposure and networking.</p>
+        <button type="button" class="learn-btn" data-modal="silverModal">Learn More</button>
+      </div>
+      <div class="info-card level-gold">
+        <h3>Gold Membership</h3>
+        <p>Premium benefits and visibility.</p>
+        <button type="button" class="learn-btn" data-modal="goldModal">Learn More</button>
+      </div>
+    </aside>
+
+  </div>
 </main>
 
-<!-- MODALS -->
-
+<!-- ── MODALS ── -->
 <dialog id="npModal">
-    <h2>NP Membership</h2>
-    <p>Designed for non-profit organizations.</p>
-    <ul>
-        <li>No membership fee</li>
-        <li>Community networking</li>
-        <li>Directory listing</li>
-    </ul>
-    <button onclick="npModal.close()">Close</button>
+  <h2>NP Membership</h2>
+  <p>Designed for non-profit organizations.</p>
+  <ul><li>No membership fee</li><li>Community networking</li><li>Directory listing</li></ul>
+  <button type="button" class="close-btn">Close</button>
 </dialog>
-
 <dialog id="bronzeModal">
-    <h2>Bronze Membership</h2>
-    <ul>
-        <li>Business listing</li>
-        <li>Networking events</li>
-        <li>Training opportunities</li>
-    </ul>
-    <button onclick="bronzeModal.close()">Close</button>
+  <h2>Bronze Membership</h2>
+  <ul><li>Business listing</li><li>Networking events</li><li>Training opportunities</li></ul>
+  <button type="button" class="close-btn">Close</button>
 </dialog>
-
 <dialog id="silverModal">
-    <h2>Silver Membership</h2>
-    <ul>
-        <li>All Bronze benefits</li>
-        <li>Advertising opportunities</li>
-        <li>Business spotlight</li>
-    </ul>
-    <button onclick="silverModal.close()">Close</button>
+  <h2>Silver Membership</h2>
+  <ul><li>All Bronze benefits</li><li>Advertising opportunities</li><li>Business spotlight</li></ul>
+  <button type="button" class="close-btn">Close</button>
 </dialog>
-
 <dialog id="goldModal">
-    <h2>Gold Membership</h2>
-    <ul>
-        <li>All Silver benefits</li>
-        <li>Homepage feature</li>
-        <li>Event sponsorship discounts</li>
-    </ul>
-    <button onclick="goldModal.close()">Close</button>
+  <h2>Gold Membership</h2>
+  <ul><li>All Silver benefits</li><li>Homepage feature</li><li>Event sponsorship discounts</li></ul>
+  <button type="button" class="close-btn">Close</button>
 </dialog>
 
-<<footer>
+<footer>
   <div class="footer-grid">
     <div class="footer-section">
       <h4>YuuKay Chamber</h4>
-      <p>126 Thomas Sankara Street<br>Lawanche, BF 21926</p>
+      <p>126 Thomas Sankara Street<br>Abuja, FCT, Nigeria</p>
       <p>📞 (+234) 81-6472-7771</p>
       <p>✉ info@yuukay-chamber.com</p>
     </div>
     <div class="footer-section">
       <h4>Quick Links</h4>
       <a href="index.html">Home</a>
-      <a href="discover.html">Discover Riverside</a>
+      <a href="discover.html">Discover YuuKay</a>
       <a href="directory.html">Member Directory</a>
       <a href="join.html">Join the Chamber</a>
     </div>
@@ -256,6 +193,15 @@
   </div>
   <div class="footer-bottom">
     <p>&copy; <span id="copyright-year"></span> ❣️ YuuKay Chamber of Commerce ❣️ WDD 231</p>
+    <!-- FIX #9: relative image paths (no leading slash) -->
+    <div class="social-links" aria-label="Social media links">
+      <a href="https://www.linkedin.com/in/ukpaigodwinumedike" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="images/linkedinicon.svg" alt=""></a>
+      <a href="https://www.facebook.com/yuu.kay.611612" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/facebookicon.svg" alt=""></a>
+      <a href="https://www.instagram.com/umedikeenyinnaya" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/instagramicon.svg" alt=""></a>
+      <a href="https://github.com/UmedikeUkpai" target="_blank" rel="noopener" aria-label="GitHub"><img src="images/githubicon.svg" alt=""></a>
+      <a href="https://twitter.com/Yuukay26" target="_blank" rel="noopener" aria-label="Twitter / X"><img src="images/xicon.svg" alt=""></a>
+    </div>
+    <!-- FIX #8: moved out of .social-links -->
     <p>Last modified: <span id="last-modified"></span></p>
   </div>
 </footer>

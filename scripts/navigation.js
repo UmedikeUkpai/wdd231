@@ -1,5 +1,5 @@
-const menuButton = document.getElementById('menuButton');
-const primaryNav = document.getElementById('primaryNav');
+const menuButton = document.getElementById('menuBtn');
+const primaryNav = document.getElementById('mainNav');
 
 menuButton.addEventListener('click', () => {
   const isOpen = primaryNav.classList.toggle('open');
