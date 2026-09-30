@@ -9,7 +9,7 @@ const MEMBERS = [
     name: "Pinnacle Tech Solutions",
     address: "142 Innovation Drive, Lawanche, BF 21866",
     phone: "(951) 555-0182",
-    website: "https://www.pinnacletech.example.com",
+    website: "https://www.pinnacletech.com",
     image: "images/pinnacle-tech.svg",
     membership: 3,
     description: "Full-spectrum IT consulting and cloud infrastructure for growing enterprises."
@@ -18,7 +18,7 @@ const MEMBERS = [
     name: "Green Valley Organics",
     address: "88 Farm Road, Lawanche, BF 21876",
     phone: "(951) 555-0234",
-    website: "https://www.greenvalleyorganics.example.com",
+    website: "https://www.greenvalleyorganics.com",
     image: "images/green-valley.svg",
     membership: 2,
     description: "Locally sourced organic produce delivered fresh to your door since 1998."
@@ -27,7 +27,7 @@ const MEMBERS = [
     name: "Riverside Legal Group",
     address: "500 Court Street Suite 300, Lawanche, BF 21886",
     phone: "(951) 555-0311",
-    website: "https://www.riversidelegal.example.com",
+    website: "https://www.riversidelegal.com",
     image: "images/riverside-legal.svg",
     membership: 3,
     description: "Comprehensive legal services for businesses and individuals across Southern California."
@@ -36,7 +36,7 @@ const MEMBERS = [
     name: "Sunrise Financial Solutions",
     address: "220 Commerce Blvd, Lawanche, BF 21896",
     phone: "(951) 555-0478",
-    website: "https://www.sunrisefinancial.example.com",
+    website: "https://www.sunrisefinancial.com",
     image: "images/sunrise-financial.svg",
     membership: 2,
     description: "Personalized wealth management and retirement planning for every stage of life."
@@ -45,7 +45,7 @@ const MEMBERS = [
     name: "Metro Build & Design",
     address: "1050 Industrial Way, Lawanche, BF 21906",
     phone: "(951) 555-0556",
-    website: "https://www.metrobuild.example.com",
+    website: "https://www.metrobuild.com",
     image: "images/metro-build.svg",
     membership: 1,
     description: "Residential and commercial construction with over 25 years of trusted craftsmanship."
@@ -54,7 +54,7 @@ const MEMBERS = [
     name: "Coastal Creative Agency",
     address: "33 Artisan Lane, Lawanche, BF 21916",
     phone: "(951) 555-0629",
-    website: "https://www.coastalcreative.example.com",
+    website: "https://www.coastalcreative.com",
     image: "images/coastal-creative.svg",
     membership: 2,
     description: "Branding, digital marketing, and web design that makes your business unforgettable."
@@ -63,7 +63,7 @@ const MEMBERS = [
     name: "Summit Health & Wellness",
     address: "780 Wellness Way, Lawanche, BF 21926",
     phone: "(951) 555-0741",
-    website: "https://www.summithealth.example.com",
+    website: "https://www.summithealth.com",
     image: "images/summit-health.svg",
     membership: 3,
     description: "Integrative healthcare clinics offering primary care, nutrition, and wellness programs."
@@ -72,7 +72,7 @@ const MEMBERS = [
     name: "Ironclad Security Systems",
     address: "415 Shield Parkway, Lawanche, BF 21936",
     phone: "(951) 555-0893",
-    website: "https://www.ironcladsecurity.example.com",
+    website: "https://www.ironcladsecurity.com",
     image: "images/ironclad-security.svg",
     membership: 1,
     description: "Commercial and residential security installations with 24/7 monitoring services."
