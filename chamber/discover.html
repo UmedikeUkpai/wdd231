@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Member Directory – YuuKay Chamber of Commerce</title>
-  <meta name="description" content="Browse the YuuKay Chamber of Commerce member directory featuring local businesses across all industries.">
+  <title>YuuKay Chamber of Commerce</title>
+  <meta name="description" content="Explore our thriving business community. Browse the YuuKay Chamber of Commerce member directory featuring local businesses across all industries.">
   <meta name="author" content="Ukpai Godwin Umedike, WDD 231">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <meta property="og:title" content="YuuKay Chamber of Commerce – Home">
+  <meta property="og:description" content="Explore our thriving business community. Browse the YuuKay Chamber of Commerce member directory featuring local businesses across all industries.">
+  <meta property="og:image" content="https://UmedikeUkpai.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://UmedikeUkpai.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
-  <script src="script/directory.js" defer></script>
+  <link rel="stylesheet" href="/chamber/styles/discover.css">
+  <link rel="modulepreload" href="data/discover.mjs">
+  <link rel="preload" as="image" href="/chamber/images/abuja_aso_rock.webp" fetchpriority="high">
+  <script src="script/discover.js" type="module"></script>
 </head>
 <body>
 
@@ -26,36 +34,25 @@
   </div>
   <button id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
   <nav aria-label="Primary navigation">
-    <ul id="nav-menu" role="menubar">
-      <li role="none"><a href="index.html" role="menuitem">Home</a></li>
-      <li role="none"><a href="directory.html"   role="menuitem" class="active">Directory</a></li>
-      <li role="none"><a href="discover.html"    role="menuitem">Discover</a></li>
-      <li role="none"><a href="join.html"        role="menuitem">Join Us</a></li>
+    <ul id="nav-menu">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="discover.html" class="active" aria-current="page">Discover</a></li>
+      <li><a href="join.html">Join Us</a></li>
     </ul>
   </nav>
 </header>
 
-<!-- Hero banner -->
-<section class="dir-hero">
-  <h2>Our Member Directory</h2>
-  <p>Connect with the businesses that make YuuKay thrive. From startups to established enterprises, our members represent the best of the Inland Empire.</p>
-  <a href="join.html" class="btn-primary">Become a Member</a>
-</section>
+<main class="discover-main">
+  <h2>Discover Yuukay District (Abuja, Nigeria)</h2>
 
-<!-- Directory -->
-<div class="dir-controls">
-  <h3>Business Members</h3>
-  <div class="view-toggle" role="group" aria-label="View toggle">
-    <button class="view-btn active" id="btn-grid" aria-label="Grid view" title="Grid view">⊞</button>
-    <button class="view-btn"        id="btn-list" aria-label="List view" title="List view">≡</button>
+  <div id="visit-message" role="status" hidden>
+    <p></p>
+    <button type="button" aria-label="Close message">✕</button>
   </div>
-</div>
 
-<div id="member-container">
-  <p id="dir-loading">Loading members…</p>
-  <p id="dir-error"   style="display:none;"></p>
-  <div id="member-grid" style="display:none;"></div>
-</div>
+  <div id="discover-grid"></div>
+</main>
 
 <footer>
   <div class="footer-grid">
@@ -68,8 +65,8 @@
     <div class="footer-section">
       <h4>Quick Links</h4>
       <a href="index.html">Home</a>
-      <a href="discover.html">Discover YuuKay</a>
       <a href="directory.html">Member Directory</a>
+      <a href="discover.html">Discover YuuKay</a>
       <a href="join.html">Join the Chamber</a>
     </div>
     <div class="footer-section">
@@ -81,7 +78,6 @@
   </div>
   <div class="footer-bottom">
     <p>&copy; <span id="copyright-year"></span> ❣️ YuuKay Chamber of Commerce ❣️ WDD 231</p>
-    <!-- FIX #9: relative image paths (no leading slash) -->
     <div class="social-links" aria-label="Social media links">
       <a href="https://www.linkedin.com/in/ukpaigodwinumedike" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="images/linkedinicon.svg" alt=""></a>
       <a href="https://www.facebook.com/yuu.kay.611612" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/facebookicon.svg" alt=""></a>
@@ -89,7 +85,6 @@
       <a href="https://github.com/UmedikeUkpai" target="_blank" rel="noopener" aria-label="GitHub"><img src="images/githubicon.svg" alt=""></a>
       <a href="https://twitter.com/Yuukay26" target="_blank" rel="noopener" aria-label="Twitter / X"><img src="images/xicon.svg" alt=""></a>
     </div>
-    <!-- FIX #8: moved out of .social-links -->
     <p>Last modified: <span id="last-modified"></span></p>
   </div>
 </footer>
